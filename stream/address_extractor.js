@@ -77,7 +77,7 @@ module.exports = function(){
 
         if( record !== undefined ){
           // copy meta data (but maintain the id & type assigned above)
-          record._meta = extend( true, {}, doc._meta, { id: record.getId(), type: record.getType() } );
+          record._meta = extend( true, {}, doc._meta, { id: record.getId(), type: 'doc' } );
           this.push( record );
         }
         else {
